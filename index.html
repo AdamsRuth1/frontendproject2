@@ -4,184 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
   <title>Results summary component</title>
-  <style>
-    body {
-      min-height: 100vh;
-      max-width: 100%;
-    }
-
-    .main-container {
-      display: flex;
-      flex-direction: row;
-      padding: 20px;
-      padding-bottom: 20px;
-    }
-
-    .first-container {
-      border-radius: 10px;
-      padding: 20px 30px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background: linear-gradient(to bottom, #4a80e4, #373284);
-      width: 50%;
-    }
-
-    .result-header {
-      color: white;
-      font-size: 10px;
-    }
-
-    .accumulated-score-container {
-      border-radius: 50%;
-      background-image: linear-gradient(to bottom, #324ab2, #1c39bb);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100px;
-      height: 100px;
-      color: white;
-    }
-
-    .accumulated-score {
-      font-size: 25px;
-      margin-bottom: 10px;
-    }
-
-    .total-score {
-      font-size: 10px;
-      color: #b7c1c8;
-      opacity: .9;
-    }
-
-    .result-feedback {
-      color: white;
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-
-    .result-description {
-      color: #b7c1c8;
-      text-align: center;
-    }
-
-    .summary-container {
-      background-color: rgb(253, 251, 251);
-      display: flex;
-      flex-direction: column;
-      padding: 10px 10px;
-      border-radius: 10px;
-      width: 50%;
-      height: 300px;
-      gap: 15px;
-    }
-
-    .summary-title {
-      color: rgb(34, 47, 66);
-      margin-left: 20px;
-    }
-
-    .item-name-one,
-    .item-name-two,
-    .item-name-three,
-    .item-name-four {
-      font-size: 14px;
-      margin-bottom: 10px;
-      margin-top: 10px;
-    }
-
-    .item-name-container,
-    .item-name-container1,
-    .item-name-container2,
-    .item-name-container3 {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-radius: 10px;
-      padding-left: 20px;
-      padding-right: 20px;
-      margin-left: 20px;
-      margin-right: 20px;
-      cursor: all-scroll;
-    }
-
-    .item-name-container:hover,
-    .item-name-container1:hover,
-    .item-name-container2:hover,
-    .item-name-container3:hover {
-      background-color: white;
-    }
-
-    .item-name-container {
-      background-color: rgb(231, 208, 234);
-    }
-
-    .item-name-container1 {
-      background-color: rgb(237, 220, 187);
-    }
-
-    .item-name-container2 {
-      background-color: rgb(207, 211, 207);
-    }
-
-    .item-name-container3 {
-      background-color: rgb(205, 205, 244);
-    }
-
-    .item-name-one,
-    .item-name-two,
-    .item-name-three,
-    .item-name-four {
-      display: flex;
-      font-size: 15px;
-      color: rgb(240, 72, 72);
-    }
-
-    .item-name-two {
-      color: orange;
-    }
-
-    .item-name-three {
-      color: darkgreen;
-    }
-
-    .item-name-four {
-      color: blue;
-    }
-
-    .item-name-one-container {
-      display: flex;
-      gap: 10px;
-    }
-
-    .item-score {
-      font-weight: bold;
-      color: rgba(0, 0, 0, 0.5);
-    }
-    .item-score:hover{
-      color: white;
-    }
-   
-    .continue-button {
-      color: black;
-      background-color: blue;
-      outline-style: none;
-      border-radius: 15px;
-      text-align: center;
-      padding: 10px;
-      color: white;
-      text-decoration: none;
-      margin-bottom: 20px;
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-
-    .continue-button:hover {
-      background-color: rgb(188, 199, 232);
-      color: black;
-    }
-  </style>
 </head>
 
 <body>
@@ -196,13 +22,13 @@
           <span class="total-score">of 100</span>
         </div>
         <h3 class="result-feedback">Great</h3>
-
         <p class="result-description">
           You scored higher than 65% <br> the people who have taken <br>these tests.
         </p>
       </div>
       <div class="summary-container">
         <h2 class="summary-title">Summary</h2>
+
         <div class="item-name-container">
           <div class="item-name-one-container">
             <img src="./assets/images/icon-reaction.svg" alt="">
@@ -210,6 +36,7 @@
           </div>
           <span class="item-score"><span class="score">80</span> / 100</span>
         </div>
+
         <div class="item-name-container1">
           <div class="item-name-one-container">
             <img src="./assets/images/icon-memory.svg" alt="">
@@ -217,6 +44,7 @@
           </div>
           <span class="item-score"><span class="score">92</span> / 100</span>
         </div>
+
         <div class="item-name-container2">
           <div class="item-name-one-container">
             <img src="./assets/images/icon-verbal.svg" alt="">
@@ -224,6 +52,7 @@
           </div>
           <span class="item-score"><span class="score">61</span> / 100</span>
         </div>
+
         <div class="item-name-container3">
           <div class="item-name-one-container">
             <img src="./assets/images/icon-visual.svg" alt="">
@@ -231,7 +60,11 @@
           </div>
           <span class="item-score"><span class="score">72</span> / 100</span>
         </div>
+
         <a class="continue-button" href="https://adamsruth1.github.io/frontendproject/">Continue</a>
+
+      </div>
+    </div>
   </main>
 
 </body>
